@@ -1,0 +1,6 @@
+name: 'Version or Commit SHA'
+description: 'Get the version (tag) or commit SHA of the current push event.'
+author: 'Hasibul Hasan'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
