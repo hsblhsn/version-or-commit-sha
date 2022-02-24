@@ -5,9 +5,8 @@ Get the version (tag) or the commit SHA of current push. This is useful for tagg
 ### Usage:
 
 ```yml
-      - name: Get version or commit SHA
-        uses: hsblhsn/version-or-commit-sha@main
+      - uses: hsblhsn/version-or-commit-sha@v1
         id: get_version
-      - name: Print version or commit SHA
-        run: echo ${{ steps.get_version.outputs.VERSION_OR_COMMIT_SHA }}
+        
+      - run: echo ${{ steps.get_version.outputs.VERSION_OR_COMMIT_SHA }}
 ```
